@@ -8,7 +8,7 @@ const github = axios.create({
   headers: { Authorization: `token ${GITHUB_TOKEN}` },
 })
 
-// Get search results
+// Get Search Results
 export const searchUsers = async (text) => {
   const params = new URLSearchParams({
     q: text,
